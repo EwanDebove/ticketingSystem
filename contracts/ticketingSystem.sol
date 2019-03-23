@@ -127,7 +127,7 @@ contract ticketingSystem {
 		}
 	}
 
-function createTicket(uint _concertId, address payable _toAddress, bool isBought) private {
+	function createTicket(uint _concertId, address payable _toAddress, bool isBought) private {
 		
 		ticketsRegister[nextTicketID].id = nextTicketID;
 		ticketsRegister[nextTicketID].concertId = _concertId;
@@ -144,7 +144,7 @@ function createTicket(uint _concertId, address payable _toAddress, bool isBought
 		}
 		concertsRegister[_concertId].totalSoldTicket ++;
 		nextTicketID ++;
-}
+	}
 
 
 
